@@ -1,160 +1,250 @@
-# ZeroPanels - mind the gap, with a snap
-Made with :heart: by Zruncho, with insights from 10+ beta testers
+# ZeroPanels: the sealed, snap-in printer enclosure
 
-**ZeroPanels**: an enclosure design which uses screw-less, nut-less, magnet-less, zero-infill, 3d-printed clips.
+![Iso](Images/v3/front_corner_iso.jpg)
 
-![T0 Iso](Images/T0_corner_iso.png)
-![Side View Ortho](Renders/side_view_ortho.png)
+**ZeroPanels** is an enclosure design for [Printers for Ants](https://3dprintersforants.com) which makes panel insertion and removal really, really, ridiculously easy.  
+
+The design uses uses screw-less, nut-less, magnet-less, low-infill, 3D-printed clips... and it works with most 1515-based printers, including [Voron Zero](https://vorondesign.com/voron0.2)*, [F-Zero](https://github.com/zruncho3d/f-zero), [Tri-Zero](https://github.com/zruncho3d/tri-zero), [Double Dragon (X0)](https://github.com/zruncho3d/double-dragon), [Micron](https://github.com/hartk1213/Micron), [Salad Fork](https://github.com/Yeriwyn/Salad_Fork), [Crucible](https://github.com/Maverick-3D/Crucible), and more.  
+
+**Are ZeroPanels for me?** If you expect to build your printer, then never maintain it or mod it... *move along; these aren't the panels you're looking for*.
+
+But if you've ever had to do maintenance on a printer, or really just enjoying modding and tweaking, then easy panel removal is a godsend, and worth a bit of filament, some tape, and a few magnets.
+
+| ![](Renders/v3/iso_tall.png) | ![](Images/v3/panel_removed_scaled.jpg) | ![](Images/v3/d0_scaled.jpg)
+| - | - | - |
+| CAD Render | Zruncho's [Tri-Zero](https://github.com/zruncho3d/tri-zero) + [BoxZero](https://github.com/zruncho3d/BoxZero) w/ZPv3 <p>showing easy door removal and top hinge | Zruncho's [Dueling Zero](https://github.com/zruncho3d/DuelingZero) w/ZPv3 <p>and optional midclips|
+
+**Version 3 adds many meaningful improvements:**
+* new "one size fits most" design fits a broader range of panel sizes out-of-the-box
+* no need to cut foam tape on a diagonal anymore
+* new hinge parts support magnetic and screw-based hinges
+* new optional screw lock for hinge bases
+* new optional midclips ensure a tight fit with larger panels (like Micron+, Tri-Zero+, Dueling Zero, and others)
+* new easier-to-edit, simplified Fusion 360 CAD
+
+The minor downside is that VHB tape is now on the BOM.
+
+[See this video](https://www.youtube.com/watch?v=6F5wUP4zZDg) for an explanation of what's new, with the v3 enclosure on [Dueling Zero](https://github.com/zruncho3d/DuelingZero).
+
+This video is probably the best way to understand what they're like and whether they're for you.
+
+## [> > > Watch v3 update video!](https://www.youtube.com/watch?v=6F5wUP4zZDg)
+
+[![alt_text](Images/v3/yt_screengrab.png)](https://www.youtube.com/watch?v=6F5wUP4zZDg)
+
+## [> > > Older v1 video shows fast insertion and removal!](https://www.youtube.com/shorts/L3nBHkO4VzE)
+
+[![alt_text](Images/yt_snapping.png)](https://www.youtube.com/shorts/L3nBHkO4VzE)
 
 ## Updates
-* 2022-01-23 Public release!
+* 2023-03-05 v3 Release!
+* 2022-12-13 v3 Beta program begins on DoomCube Discord
+* 2022-04-18  ZeroPanels motivate [BoxZero](https://github.com/zruncho3d/boxzero), a fully-boxed V0 option.
+* 2022-03-03 Tecnologic shares ["Tecnologic-style" ZeroPanels](https://github.com/Tecnologic/ZeroPanels/tree/main/Mods/tecnologic/FlyingZero300) for [F-Zero](https://github.com/zruncho3d/f-zero), which have a larger corner size, as well as optional inner parts, and cover all sides.  They're really nice.  They influence v3 and BoxZero.
+* 2022-01-23 Public release of original V1 ZeroPanels, which are intended mostly for just the left and right sides of a printer, and assume a tophat on top and a default V0 hinged front panel.
 
 ## Why ZeroPanels?
 
-ZeroPanels are a faster and easier way to enclose your Zero-size printer with 15mm-wide extrusions - whether [Voron Zero](https://vorondesign.com/voron0.1), [F-Zero](https://github.com/zruncho3d/f-zero), [Tri-Zero](https://github.com/zruncho3d/tri-zero), [Double Dragon (X0)](https://github.com/zruncho3d/double-dragon), [Micron](https://github.com/hartk1213/Micron), [Salad Fork](https://github.com/Yeriwyn/Salad_Fork), [Crucible](https://github.com/Maverick-3D/Crucible), or other.
+**No !@#$ing screws and nuts.** A default V0 enclosure (just left & right) requires 24 screws and nuts. Even with [NoDropNuts](https://github.com/zruncho3d/f-zero/tree/main/STLs/NoDropNuts) to hold the nuts in place, having to unscrew a bajillion screws to remove one panel - and then screw them all back in again - is not fun.
 
-Quick to remove: **5 seconds** beats **5 minutes**.  
+**Mind the gap.** Many [Printers for Ants](www.3dprintersforants.com) need an extra mm to clear an MGN7 carriage (17mm wide) when mounted inside a 1515 extrusion.  You can solve this problem by printing thicker clips and using foam tape, but if you’re going to reprint enclosure parts… you might as well avoid the pain of all those screws too.
 
-Fast to print: a full plate prints in well under two hours.
+**Seals tight.** This gap is closed by foam that you add to the panels, and the extrusion clips gently press the foam against the panels.  Speaking of which...
 
-Designed to click in the first time, then support many insertion & removal cycles.
+**Shut the front door.** ZeroPanels are sealed by default, including the front door.
 
-They solve one pain point of V0-style enclosure clips: *24 !@#$ing screws and nuts*.  Even with [NoDropNuts](https://github.com/zruncho3d/f-zero/tree/main/STLs/NoDropNuts) to keep the nuts in place, it's still 24 !@#$ing screws.  These get to be a pain, especially if you like to tinker.  
+**Bye-bye, tophat.**  Easily add a top-hinge panel to replace a tophat on for fully-boxed printer mods like [BoxZero](https://github.com/zruncho3d/boxzero).
 
-They also solve a problem that many [Printers for Ants](www.3dprintersforants.com) have: getting an extra mm to clear an MGN7 carriage (17mm wide) when mounted in a 1515 extrusion (15mm wide).  You can solve this problem by printing thicker clips and using foam tape, but if you’re going to reprint enclosure parts… you might as well avoid the pain of all those screws too.
+**ZeroPanels FTW.**  There’s more thought and work in these little parts than you might realize.
 
-**ZeroPanels solve both of these problems.**
+## Bill of Materials
 
-This is the gap to mind, being... minded:
+| Part/Material | Description | Amount | Link | Note |
+| - | - | - | - | - |
+| Filament | Something strong and slightly flexible | - | - | Tested with ABS, though PETG probably will work, too.  PLA is probably not a good fit here. |
+| Foam Tape | 3mm or 1/8" Adhesive-backed Foam Tape | Enough to cover all panel edges | [example (Amazon) ](https://www.amazon.com/gp/product/B08MTXJBR5/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) | The Yotache brand is nice, because it doesn't show lines on the adhesive side through the acrylic, unlike others. |
+| Tape | Double-sided VHB tape (1mm-ish) | Some | [example (Amazon)](https://www.amazon.com/gp/product/B09R5ZF8XZ/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&th=1) | Doesn't need to hold *that* well; non-genuine VHB is probably fine. |
+| Magnets | 6mm dia x ~3mm depth "V0 standard" magnets | 6 per hinge pair | Some | See "Choosing a Hinge" below |
+| Screws | M3x35 SHCS/BHCS | 2 per hinge pair | Link | See "Choosing a Hinge" below |
+| Screws | M2x12 self-tapping screw (or M2x10 in a pinch) | - | (optional) 1 per hinge | Optional screw lock.  Can also drill out the hole and use an m3 screw too, if the hole strips, or you just want an m3. |
+| Nuts | M3 regular or Nylock nut | 2 per hinge pair | Link | See "Choosing a Hinge" below |
+| Panels | 3mm | Depends | - | These should be sized for ~6mm beyond the inner frame width.  For example, on a V0, 200mm + 6mm * 2 --> 212mm width.  *Note*: the front door becomes the same size as the side panels, so a V0 panel kit with tophat needs a 9mm shave on the top to fit here.|
 
-![T0 Gap](Images/T0_filling_the_gap.png)
+**Choosing a Hinge**: magnet or screw?  You can do one of each; Zrucho's preference is a screw-hinged top and magnet-hinged front.  You can even skip a top hinge and just use a snap-in top panel, especially if you want to flip your printer and have it sit on a flat surface frequently.
 
-There’s more thought and work in these little parts than you might realize.  
+The magnet hinge enables you to grab the front panel, lift up, and remove it entirely.  The screw option enables you to tighten the screws, so that the top panel holds in place vertically, for extruder access or filament changes.
 
-![Hinge Clip Render](Renders/small_hinge_clip.png)
+If you want a nice strong front-door close, then add 2-8 optional door magnets. The printed parts match the ZeroPanels offset, but also give a more powerful seal.  The front-door bits require a few extra parts:
 
-The design goals were to:
-* Print quickly, with a minimum of material (zero-infill design with a single perimeter)
-* Minimize the need for any additional tape or fasteners
-* Support slightly-off panels and slightly-off frames
+| Part/Material | Description | Amount | Link | Note |
+| - | - | - | - | - |
+| Screw | M2x10 self-tapping screw | - | 1 per unit | Longer lengths can typically be cut down to size with strong wire cutters. |
+| Screw | M3x6 FHCS | - | 1 per unit | |
+| Tape | Thin double-sided tape, 1/4" / 6mm wide | - | Enough to cover one magnet per unit | Cut any size width you have to size. |
+| Magnet | 1/8" thick, 3/8" diameter countersunk ring magnet | - | 2 per unit | Choose your preferred size |
+| Magnet | 1/8" thick, 1/2" diameter countersunk ring magnet | - | 2 per unit | Choose your preferred size |
 
-The inspiration came from car interior panels, which use a sequence of clips to hold in place securely, without screws.  Early versions used vertically-printed tight-in-the-extrusion clips with panels that would slide into place.  But this has practical issues, like getting the panel out, and ensuring that it seals.
+## Printing Tips
 
-The insight that made this practical was realizing that "picture-frame corners" would enable printing at a 45 degree angle, with potentially just one unique part, and could clip to the entire panel, then into the frame.
+The unusual 45-degree orientation is what makes these possible.
 
-Beyond here, the details were in getting the flexible clips to fit right and flex right, as well as understanding where the variation in extrusions even *is*.  Fitting to one extrusion type was not too bad, but fitting to two required major changes.
+For **non-hinge** parts:
+* 0% infill (minimum), 2 perims (minimum), 2 bottom layers, 5 top layers, 0.6 forced width, 0.2 layer height
 
-Zruncho printed over 20 prints to get this even *close* to right.  
+The wider extrusion width helps with the overhangs.  However, if you get too much corner curl with the wider width, try 0.45 or 0.5 width instead, possibly with an extra perimeter, and/or reduce the layer width to 0.16mm.
 
-The corps of beta testers (thank you! see Credits below) then helped identify a number of reliability and printability improvements, resulting in a public release.
+For **hinge** parts:
+* Same params, except use 16% infill (minimum); extra perims may improve hinge strength too
 
-It won't fit *every* extrusion, but the default 015 size should work: "one size fits most".  As this gets deployed more broadly, we'll learn what the corner cases are.
+Bed adhesion is important for a cantilevered part like this.  Consider all of these:
+* a hotter heated bed
+* a properly prepared PEI surface (soaped, scuffed, iso'ed)
+* extra first-layer squish
+* an adhesion aid like Vision Miner Nano
+* brim, if still stuck
 
-## Quickstart
-* Choose a plate from STLs/Plates/: pick the 015-size plate that matches your printer type:
-  * *V0-style*: fits printers with front top idlers, like [Voron Zero](https://vorondesign.com/voron0.1), [Tri-Zero](https://github.com/zruncho3d/tri-zero), or [Double Dragon / X0](https://github.com/zruncho3d/double-dragon)
-  * *General-style*: fits others, like [Micron](https://github.com/hartk1213/Micron), [Salad Fork](https://github.com/Yeriwyn/Salad_Fork), [Crucible](https://github.com/Maverick-3D/Crucible), [F-Zero](https://github.com/zruncho3d/f-zero) (see *F0 note* below) or other.
-* Print in ABS with one perimeter and no infill.
-* Assemble the left-side panel.  Clear any nuts out of the way first, then align the pointy bits into the extrusions, pushing in one clip in at a time. If the panel fully inserts and holds, great!  If not, you may be better served with a different size; see Full Instructions below.
-* Remove the panel, by popping off individual clips, one-at-a-time.
-* Pop off the panel and add 3mm or [1/8” adhesive-backed foam tape](https://www.amazon.com/dp/B09L4MYQ83).  Cut at 45 degrees, get the length right, cut the other side at 45 degrees, and attach the strip to the panel, for each side
-* Repeat for the hinge side, making sure to drill out the hinge holes to just-slightly-under-3mm first, before threading in the hinge screws.
+If there's an interference with the extrusions, then you'll need to fix it in CAD beforehand (using a press-pull operation is easy enough...) or use flush cutters after.  Sorry, but generating and orienting versions of every part for every printer is a maintenance burden.
 
-Enjoy!
-
-## Full Instructions
-
-### Picking the optimal size
-
-The 3 sizes are default [015], tight [025], and loose [001].
-
-The numbers represent the amount of "extra grip" - beyond 3mm - for the slot inside 1515 extrusions, for each side.
-
-This view shows the 001 size on a 3mm-slot-width extrusion: almost an exact fit, with no "extra grip".
-![Side View Ortho](Renders/side_view_perspective.png)
-
-**The default 015 size should work for almost everyone**.  
-
-You could look up manufacturer specs to inform the ideal size choice, but ideally, you'd measure using calipers first, because **1515 extrusions vary a surprising amount**.
-
-Zruncho has seen datasheets indicate 3.4mm width, but then measured 3.15mm.  Beta testers measured values between 2.90mm and 3.75mm **(!!!)**.
-
-Ideally, measure at multiple points on multiple extrusions, then use this sizing chart:
-
-| Measured Size Range | Recommendation |
-| - | - |
-| below 3.2mm | loose: 001 |
-| between 3.2mm and 3.5mm | default: 015 |
-| above 3.5mm | tight: 025 |
-
-Since this is a fast print, you can try a test part (or a few test parts) first, from each size!  Numbers are debossed into each part to tell them apart easily.
-
-See if the amount of snap feels right, and whether the part can move once inserted, and whether it removes with an amount of force that works for you.
-
-### Printing Tips
-
-For ease of printing, use the provided plates.
-
-The sample parts below show KVP Stellar Black ABS, printed at 235C on an [F-Zero](https://github.com/zruncho3d/f-zero), at 100 mm/s.
+Get the settings right, and each part should look perfect, even when printed at the flowrate limit of the hotend.  The sample parts below show v1 parts in KVP Stellar Black ABS, printed at 235C on an [F-Zero](https://github.com/zruncho3d/f-zero).
 
 ![Print Sample](Images/print_sample.png)
 
-Use these recommended print settings:
-* **Slicing/Infill**
-  * 0% infill
-  * 0.7mm extrusion width
-  * 1 perimeter: use 2+ if you want for less flex… but once installed you’ll probably never care
-  * 0 top layers, 3 bottom layers
-  * 0.2mm slicing thickness; up to 0.3mm works fine with a 0.4mm nozzle, as the wide extrusion width helps with overhangs and thicker → faster printing
-* **Speed**: whatever prints well for you! Large extrusion widths will create backpressure and change the optimal pressure advance value, and going slower may help reduce the chance of problems.
-* **Brim**: not necessary, but it may help adhesion
-* **Temp**: Normal-to-hotter is better here for adhesion
-* **Orientation**: Orient on the 45, as in the STLs; rotate so that the seam is in back for aesthetics, but also to make sure the seam doesn’t affect any critical dimensions.   
-* **Material**: ABS is highly recommended and is the only material tested, because it provides a nice snap.   PETG is probably fine, but more brittle materials like PLA are an unknown.   If you try it, share the results.
-* **Slicer**: SuperSlicer is known to work well here, but there should be nothing slicer-specific here.
+## Instructions
 
-Using a bed with good adhesion (PEI), a hint of first-layer smush (not too much though: no bed chamfer here, intentionally), and reasonable cooling, you should be able to print these parts successfully.  
+### Required Reading: understanding the thickness setting
 
-If not...
+**Always print and assemble a test panel first, because component thicknesses vary.**  
+
+Acrylic panels, extrusions slots, foam tape, and VHB tape all vary slightly in thickness, as does each printer.  You want to ensure that these parts work for your printer, *before* printing a full set.
+
+The default panel set assumes these sizes:
+* VHB tape thickness: 1.1mm
+* acrylic panel thickness: 2.9mm
+* foam tape thickness: 3.0mm
+
+This stack needs a tiny bit of squish to form a good seal.   If that stack is too skinny for the plastic part, an air gap will result.  If that stack is too thick, the tape near the hinges may separate over time, and a gap may form in the center of the panels due to bowing.  In a hot chamber, your panels might even set into a bowed position.  
+
+By default, the stack assumes a 7.0mm stack thickness, squeezed down to 6.7mm, ensuring about 0.3mm of squish.
+
+![](Renders/v3/measurement.png)
+
+These numbers are based on the collected measurements from the many beta testers, in an attempt to provide a single reasonable default.
+
+The amount of "extrusion grip" has been set similarly, to a size that should fit most extrusions and provide a reasonably satisfying, audible click, especially with LDO and MakerBeamXL extrusions.  Misumi are known to have wider slots, but you can somewhat account for this by offsetting the attachment of the corners to the panel, to effectively preload them, plus the screw locks for the hinges help here too.
+
+If your component stack is less than 6.8mm or more than 7.2mm or so, then you're more likely to benefit from a custom size. However, if you need a size tweak, it's a straightforward change in the Fusion 360 CAD, as noted below.  **Try it first.**
+
+### Print and assemble a test panel
+
+#### Print and prep corners
+
+Print 4 normal corners, using the settings above.
+
+For each piece, cut out VHB to fit, with 90 degree cuts only, for all areas that will touch the panel.  Use two pieces for the L shapes and 1 for the straight-through mid-pieces, as shown below.
+
+Push the tape downwards, and ensure it sits perfectly flat, or reapply the tape and try again.  A printer spatula works great for this purpose.  Looks like this:
+
+![](Images/v3/parts_on_table.png)
+
+#### Prep panel with foam tape
+
+You can do this while your parts are printing.
+
+Remove a panel’s length of foam tape.  Get it started at one end, then *very gently* apply a bit of tension on the tape; run your finger along the panel edge and the tape edge.  You can get a perfectly-straight application with this technique, and by not pulling too hard, you prevent ugly stuff from showing on the tape's underside.  Just make sure everything overlaps.  
+
+Repeat for the other 3 parts to complete a panel.
+
+Make sure to remove the acrylic panel backing first!  You can remove just the edge part to keep the panel pristine.
+
+Then put a book on top and let it sit foam-down for a bit.  Otherwise, expect that the tape might peel up near the edges, where you’re likely to have touched it the panel with your finger oils.  You want the tape to set a bit.
+
+![](Images/v3/prepped_panel_horizontal.jpg)
+
+#### Pre-test the panel
+
+Make sure there are no occlusions before trying this - that is, there are no clips interfering with printed parts, and no nuts where the panels will insert.  Trim the clips if there are any occlusions.
+
+Add all 4 clips with the red VHB backing still in place, to confirm that the stack height is about right.  Make sure the panel grips into the extrusion slots. The panel should hold securely, but remove easily when you push out from the inside, one corner at a time.  It's kinda like removing car interior pieces with plastic clips.  
+
+Now, do the real test.
+
+#### Assemble the panel
+
+Remove the VHB's remaining red backing on the 4 clips. This step can be surprisingly hard if the backing sticks well to the tape itself.  Here's a protip: using a thin flat printer spatula, separate a corner of the backing from the tape.  As soon as you have a little triangle to grab, use needle-nose pliers to grab the tape and slowly peel back.  You can use this trick to avoid disturbing the VHB and having it peel away from the part.
+
+Next, secure one plastic corner to a panel corner.  Mark the corner, say, with a Sharpie on the inside.   Squish it HARD.  Align the panel to the printer.  Do the same for the opposite corner, being careful to align it all to the extrusions.  Squish it hard.  Then add the other 2 corners in place.  To help ensure the VHB sticks as well as possible, you can pop off the panel and have some books weigh it down.  Make sure it has time to set before doing insertion/removal testing.
+
+#### Check the fit
+
+Look from the side, using a phone flashlight, to ensure no air gaps are present.  The panel should seal.  If it bows outward, consider using the optional mid-clips and mid-hinge for additional hold.
+
+See if the amount of snap feels right.  See whether the assembled panel holds steady once inserted, and whether it removes with an amount of force that works for you.
+
+**All good?**  Print the rest.
+
+### Print the rest
+
+#### Assembling magnetic hinges
+
+![](Images/v3/hinges.png)
+
+These are simple, easy, and fast to build.
+
+First, make a magnet pair for each hinge: literally, a pair of glued magnets with some CA glue.  It's out-of-chamber, so regular glue is fine.
+
+Put a spot of glue into the hole on the fixed part, where the magnet pair will go; for the door, these would be on the right, and are the parts with a hole for an M2 locking screw.  Push the magnet pair in and make sure it sits flat.  Yes, a whole magnet sticks out.
+
+Now, get the moving part, the one without a hole, with a deeper pocket.  Clean up the hole beforehand with a 6mm diameter reamer, end mill, or M6 screw.  Everything is glued here and non-critical, so a little looseness in the magnet pockets is fine; you just need the magnet to insert and remove easily, plus have space to act as a hinge.  Put a spot of glue in this part.  Then add a magnet onto the magnet pair of the fixed part from before, and press this into the pocket, just enough to become obscured.  Slide it out carefully, then press down all the way with a pen or other plastic thing that fits, until it sets from the glue.  
+
+Test the hinge!  It should pop on and off without issue and rotate easily.  With two, the rotation will be even smoother.
+
+#### Assemble the door
+
+Assemble two hinge pairs and complete the right-side panel.  Attach the right-side panel and lock it in place with the M2 locks near the hinges.   Turn the screws until they hit the end and resist, but DO NOT strip them.  The screw locks don't need to be super-tight anyway; they're mostly preventing the panel clips from unclipping, vs actively pressing against the extrusion slot.  Worst-case, if you strip these, you can remove a chunk of panel clip, drill them out to m3, and have them mate to a nut in an extrusion slot.
+
+Then assemble the door panel, ensuring that you use smooth corners, and add it.  You *can* use the panel clips everywhere, including as a door closure, but given the high cycle life there, magnetic feels right... it has an infinite cycle life.
+
+The door should pop on and off easily.  To reattach, push the door against the front, then let it fall down into place.
+
+Once it's in place, consider printing and attaching the optional-but-recommended magnet bumps, which cover up cylinder or ring magnets, and which grip tightly to the corresponding magnet receivers that clip into the extrusions.  The bumps attach using thin (0.1mm or so) double-sided tape.
+
+Two magnet bumps on the left of the door is a good start, with others on top and side if you see air gaps or want a generally tighter seal.  Use more for bigger panels, too, especially for T0+ or D0-size printers.
+
+#### Assemble a screw-based hinge (especially on top)
+
+Similar steps here. The screw top will be exposed on the top side (assuming the door orientation), and a nylock nut goes into the pocket, and is hidden.  Tighten both screws fully only when the top and back are in place, along with the M2 screw locks on the top rear.
+
+You can go tight enough for the hinge to hold vertically in place.
 
 ### Troubleshooting Tips
 
-**Cooling a problem?**  Print the full plate or space out the parts on the plate.
+**Cooling a problem?**  Print the full plate or space out the parts on the plate.  Print thinner layers, print slower, and print cooler.
 
-**Adhesion a problem?**  Add a brim, add more first-layer smush, or use a bed adhesive.
+**Adhesion a problem?**  Add a brim, add more first-layer smush, print thinner layers, or use a bed adhesive.
 
-**Strength a problem (breaking at layer lines)?**  Reduce cooling or jack up the temp.
+**Strength a problem (breaking at layer lines)?**  Reduce cooling, add an enclosure, or jack up the print temp.  These are functional parts and should always be printed hotter if possible, for strength.
 
 ## CAD Notes
 
-![Sketch Critical Dims](Renders/sketch.png)
+The CAD is designed to be understandable and modifiable, so you can do your own customizations, if not a CAD expert.
 
-The F360 file is parameterized to enable easy dimension adjustments where it matters.  See the descriptions in the F360 file.
+All sketches, operations, and construction planes are labeled.
 
-![Side View Ortho](Renders/all_in_iso.png)
+Almost all dimensions of value are stored as parameters.  Here are the most useful ones:
 
-If you want to make any changes and then export a custom clip set, it’s not too bad.  
+`foam_tape_compressed_thickness`: adjust this from the default size for your stack
+`no_grip_len`: increase if you want more length without a clip
+`main_corner_len`: increase to 80 if you want a longer clip
 
-To clear out the V0-specific bits:
-* Delete the V0-specific features in the CAD: there are 4 of these.  
-* Fix any profiles that Fusion loses, like the hinges, as well as any body names that change when the bodies change.  
+Other params don't affect the corners, but make it easy to set the distances to match your printer, for easier CAD import.
 
-For most changes, make sure to update the debossed text for any size changes. Then do the 3D-Print .stl export for the first 6 bodies, which should include two duplicated ones.
+Once you've made your adjustments, you'll need to export all bodies, reorient on the 45, and face all seams face backwards so that they end up hidden.
 
-Before release, Zruncho's process is to import the STL, spread the parts, reorient along the 45 degree edge, turn them to hide the seam as needed, re-spread, manually move to enable overlap if motivated, and then export the plate as STL.
+## Compatibility notes
 
-### Using the profile in other parts
-Feel free to use the geometry!  It’s been heavily tested and evolved for a good cycle life, good snap, and fits many extrusion types with a small number of variants. The key parameters are mostly explained in CAD, too.
+(1) The latest [Voron Zero](https://vorondesign.com/voron0.2) (0.2) needs flat top chops for extrusion tophat compatibility.
 
-This would be a useful profile for things like Wago mounts, wire clips, LED bars, and more.
-
-## F0 Note
-The General files don’t quite fit F0s, which use a custom corner design.  The easiest path here is to print those, then use flush cutters to trim them slightly.
-
-## Improvement Ideas
-Some ideas:
-* Optional screw locks, especially for the V0 top parts.  Could be through-hole in these parts, to match screws with added-in-post heatsets on the front idlers.   Or, could use self-tapping screws with wedge-shaped clip parts to expand a taper and lock things in more securely.  
-
+(2) The original Dueling Zero README lists panels that are 9mm beyond the inner frame width, not 12mm.  To use these on D0, make sure to adjust the magic 'x' parameter and follow the note in the CAD, then export the parts you need.  If you go for normal-size frames, then ignore this message.
 
 ## FAQ
 
@@ -168,24 +258,27 @@ We'll see about that one.
 
 Another possible catch is that not every printer is dimensionally accurate, and that can affect how well the design works *for you*.  They're designed to account for variance in panel width, extrusion slot width, and panel thickness.  But if your printer prints bulges at the corners, for example, the clips may not work for you.
 
-### Are there mid-position clips (between the frame corners)?  Not yet.
-Mid-position clips, like the default V0 enclosure, would be an easy addition, though.
-
 ### Could I extend the design to fully cover extrusions?  Yes.
-Yes, you could!  That was the original design, and how the CAD works, intentionally.  
+Yes, you could!  See the [Technologic-style version](https://github.com/Tecnologic/ZeroPanels/tree/main/Mods/tecnologic/FlyingZero300) for an example.
 
 You'd have to think through the print orientation(s) though to fully reuse this profile.
 
 ### Can I do a double-panel version?  Yes.
-Yes, the CAD includes this in the main profile sketch, for a DoomCube-inspired double-pane version.  Take a look.
-
-### Can I do a “Regular V0” version with no 2mm offset to the panels?  Yes.
-Yes, you can.  Not in the geometry yet, though.  Can hack it with a few dimension changes though.
-
+Definitely.  You'd need to thicken the panels, but add an extra layer of VHB and another panel and make small mods and you may be able to do a simple double-panel setup.
 
 ## Credits
 
 These parts are a spinoff from the [Tri-Zero](https://github.com/zruncho3d/tri-zero) project.
+
+V3 credits:
+
+Thanks to Grizzle357, sorkyl, Floaf, falo, SuperPringles, burningBeard, Ax4x Se7en, John, Kosh42EFG, schwaded, and Bacon for taking measurements that informed the parts here.  Thanks to chadonka for printing an entire enclosure on an in-progress D0!
+
+V2 credits:
+
+Unreleased, but inspired by Tecnologic.  The CAD got out of hand and needed to be redone properly, starting over from the first sketch.
+
+V1 credits:
 
 Thanks to Yeri, Speedy, Ericsson, RogueNeurons, Maverick, Sparkss, rok3, flyespresso, tecnologic, and Lowstream on the [DoomCube Discord](https://discord.gg/doomcube) for extrusion measurements.
 
