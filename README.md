@@ -4,7 +4,7 @@
 
 **ZeroPanels** is an enclosure design for [Printers for Ants](https://3dprintersforants.com) which makes panel insertion and removal really, really, ridiculously easy.  
 
-The design uses uses screw-less, nut-less, magnet-less, low-infill, 3D-printed clips... and it works with most 1515-based printers, including [Voron Zero](https://vorondesign.com/voron0.2)*, [F-Zero](https://github.com/zruncho3d/f-zero), [Tri-Zero](https://github.com/zruncho3d/tri-zero), [Double Dragon (X0)](https://github.com/zruncho3d/double-dragon), [Micron](https://github.com/hartk1213/Micron), [Salad Fork](https://github.com/Yeriwyn/Salad_Fork), [Crucible](https://github.com/Maverick-3D/Crucible), and more.  
+The design uses uses screw-less, nut-less, magnet-less, low-infill, 3D-printed clips... and it works with most 1515-based printers, including [Voron Zero](https://vorondesign.com/voron0.2)* (see Compatibility Notes below), [F-Zero](https://github.com/zruncho3d/f-zero), [Tri-Zero](https://github.com/zruncho3d/tri-zero), [Double Dragon (X0)](https://github.com/zruncho3d/double-dragon), [Micron](https://github.com/hartk1213/Micron), [Salad Fork](https://github.com/Yeriwyn/Salad_Fork), [Crucible](https://github.com/Maverick-3D/Crucible), and more.  
 
 **Are ZeroPanels for me?** If you expect to build your printer, then never maintain it or mod it... *move along; these aren't the panels you're looking for*.
 
@@ -242,7 +242,7 @@ Once you've made your adjustments, you'll need to export all bodies, reorient on
 
 ## Compatibility notes
 
-(1) The latest [Voron Zero](https://vorondesign.com/voron0.2) (0.2) needs flat top chops for extrusion tophat compatibility.
+(1) The latest [Voron Zero](https://vorondesign.com/voron0.2) (0.2) needs flat top chops on the corners for extrusion tophat compatibility (so that the clips don't interfere with the tophat plastic parts).  For compatibility with a full-height front, like those found in most V0 frame kits, you'd need to also mod the front clips a bit, since the plastic would be in the way of the top 9mm and bottom 9mm of acrylic panel.
 
 (2) The original Dueling Zero README lists panels that are 9mm beyond the inner frame width, not 12mm.  To use these on D0, make sure to adjust the magic 'x' parameter and follow the note in the CAD, then export the parts you need.  If you go for normal-size frames, then ignore this message.
 
