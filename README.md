@@ -91,7 +91,7 @@ The unusual 45-degree orientation is what makes these possible.
 For **non-hinge** parts:
 * 0% infill (minimum), 2 perims (minimum), 2 bottom layers, 5 top layers, 0.6 forced width, 0.2 layer height
 
-The wider extrusion width helps with the overhangs.  However, if you get too much corner curl with the wider width, try 0.45 or 0.5 width instead, possibly with an extra perimeter, and/or reduce the layer width to 0.16mm.
+The wider extrusion width helps with the overhangs.  However, if you get too much corner curl with the wider width, try 0.45 or 0.5 width instead, possibly with an extra perimeter, and/or reduce the layer height to 0.16mm.
 
 For **hinge** parts:
 * Same params, except use 16% infill (minimum); extra perims may improve hinge strength too
