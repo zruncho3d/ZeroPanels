@@ -47,7 +47,7 @@ This video is probably the best way to understand what they're like and whether 
 
 **No !@#$ing screws and nuts.** A default V0 enclosure (just left & right) requires 24 screws and nuts. Even with [NoDropNuts](https://github.com/zruncho3d/f-zero/tree/main/STLs/NoDropNuts) to hold the nuts in place, having to unscrew a bajillion screws to remove one panel - and then screw them all back in again - is not fun.
 
-**Mind the gap.** Many [Printers for Ants](www.3dprintersforants.com) need an extra mm to clear an MGN7 carriage (17mm wide) when mounted inside a 1515 extrusion.  You can solve this problem by printing thicker clips and using foam tape, but if you’re going to reprint enclosure parts… you might as well avoid the pain of all those screws too.
+**Mind the gap.** Many [Printers for Ants](https://3dprintersforants.com/) need an extra mm to clear an MGN7 carriage (17mm wide) when mounted inside a 1515 extrusion.  You can solve this problem by printing thicker clips and using foam tape, but if you’re going to reprint enclosure parts… you might as well avoid the pain of all those screws too.
 
 **Seals tight.** This gap is closed by foam that you add to the panels, and the extrusion clips gently press the foam against the panels.  Speaking of which...
 
