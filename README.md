@@ -4,7 +4,7 @@
 
 **ZeroPanels** is an enclosure design for [Printers for Ants](https://3dprintersforants.com) which makes panel insertion and removal really, really, ridiculously easy.  
 
-The design uses uses screw-less, nut-less, magnet-less, low-infill, 3D-printed clips... and it works with most 1515-based printers, including [Voron Zero](https://vorondesign.com/voron0.2)* (see Compatibility Notes below), [F-Zero](https://github.com/zruncho3d/f-zero), [Tri-Zero](https://github.com/zruncho3d/tri-zero), [Double Dragon (X0)](https://github.com/zruncho3d/double-dragon), [Micron](https://github.com/hartk1213/Micron), [Salad Fork](https://github.com/Yeriwyn/Salad_Fork), [Crucible](https://github.com/Maverick-3D/Crucible), and more.  
+The design uses screw-less, nut-less, magnet-less, low-infill, 3D-printed clips... and it works with most 1515-based printers, including [Voron Zero](https://vorondesign.com/voron0.2)* (see Compatibility Notes below), [F-Zero](https://github.com/zruncho3d/f-zero), [Tri-Zero](https://github.com/zruncho3d/tri-zero), [Double Dragon (X0)](https://github.com/zruncho3d/double-dragon), [Micron](https://github.com/hartk1213/Micron), [Salad Fork](https://github.com/Yeriwyn/Salad_Fork), [Crucible](https://github.com/Maverick-3D/Crucible), and more.  
 
 **Are ZeroPanels for me?** If you expect to build your printer, then never maintain it or mod it... *move along; these aren't the panels you're looking for*.
 
